@@ -1,6 +1,4 @@
-Thanks for downloading this template!
+Thanks for visiting this repository !!
 
-Template Name: Company
-Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Organization Name: Donabin
+Organization URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
