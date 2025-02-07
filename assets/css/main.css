@@ -152,7 +152,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 100px;
+  max-height: 40px;
   margin-right: 8px;
 }
 
@@ -2655,7 +2655,7 @@ section,
 .catchy-button {
   display: inline-block;
   padding: 12px 20px;
-  background-color: #008A3A;
+  background-color: #FF6500;
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -2665,7 +2665,8 @@ section,
 }
 
 .catchy-button:hover {
-  background-color: #00722f;
+  background-color: #aa4705;
+  color: white;
 }
 
 .image-content {
@@ -2682,12 +2683,111 @@ section,
   border-radius: 30px;
 }
 
-@media (max-width: 768px) {
-  section {
+@media (max-width: 1200px) {
+  .catchy {
       flex-direction: column;
       text-align: center;
+      padding: 0;
   }
+
+  .catchy {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 75, 4, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
   .text-content {
-      padding: 30px;
+    flex: 1;
+    background-color: #f7f7f7;
+    opacity: 85%;
+    border-radius: 30px;
+    height: 400px;
+    width: 800px;
+    margin-top: 50px;
+  }
+
+  .text-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: 40px;
+  }
+  
+  .text-content p {
+    font-size: 25px;
+    color: #444;
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .image-content img {
+    object-fit: cover;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catchy {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+  }
+
+  .catchy {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 75, 4, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-content {
+    flex: 1;
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 30px;
+    margin-inline: 120px;
+    height: 400px;
+    width: 800px;
+  }
+
+  .text-content h1 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: 40px;
+    margin-inline: 150px;
+  }
+  
+  .text-content p {
+    font-size: 20px;
+    color: #444;
+    margin: 15px 170px;
+    line-height: 1.5;
+  }
+
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .image-content img {
+    object-fit: cover;
+    border-radius: 30px;
   }
 }
