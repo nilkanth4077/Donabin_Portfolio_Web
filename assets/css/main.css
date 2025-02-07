@@ -2746,9 +2746,9 @@ section,
 
   .catchy {
     display: flex;
+    position: relative;
     align-items: center;
     background-color: rgba(255, 75, 4, 0.15);
-    border-radius: 12px;
     overflow: hidden;
     max-width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -2758,10 +2758,11 @@ section,
     flex: 1;
     background-color: #f7f7f7;
     padding: 40px;
-    border-radius: 30px;
-    margin-inline: 120px;
+    margin: 0 120px;
     height: 400px;
     width: 800px;
+    position: relative;
+    opacity: 100%;
   }
 
   .text-content h1 {
@@ -2783,11 +2784,12 @@ section,
     flex: 1;
     display: flex;
     justify-content: center;
-    
+    border-radius: 0;
   }
   
   .image-content img {
+    border-radius: 0;
     object-fit: cover;
-    border-radius: 30px;
+    max-height: 450px;
   }
 }
