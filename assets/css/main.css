@@ -2694,7 +2694,6 @@ section,
     display: flex;
     align-items: center;
     background-color: rgba(255, 75, 4, 0.15);
-    border-radius: 12px;
     overflow: hidden;
     max-width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -2704,10 +2703,9 @@ section,
     flex: 1;
     background-color: #f7f7f7;
     opacity: 85%;
-    border-radius: 30px;
-    height: 400px;
-    width: 800px;
-    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    position: relative;
   }
 
   .text-content h1 {
@@ -2725,15 +2723,17 @@ section,
   }
 
   .image-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    
+    height: auto;
+    width: 100%;
+    border-radius: 0;
   }
   
   .image-content img {
+    width: calc(100% + 100px);
+    height: auto;
     object-fit: cover;
-    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0;
   }
 }
 
@@ -2746,7 +2746,6 @@ section,
 
   .catchy {
     display: flex;
-    position: relative;
     align-items: center;
     background-color: rgba(255, 75, 4, 0.15);
     overflow: hidden;
@@ -2788,9 +2787,10 @@ section,
   }
   
   .image-content img {
-    border-radius: 0;
+    width: calc(100% + 100px);
+    height: auto;
     object-fit: cover;
-    max-height: 450px;
+    transition: transform 0.3s ease-in-out;
   }
 }
 
