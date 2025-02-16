@@ -8,6 +8,7 @@
 /* Global Colors */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --light-orange-bg-color: rgba(255, 75, 4, 0.15);
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #FF6500; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -962,7 +963,7 @@ section,
 
 .about .our-story {
   padding: 40px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  background-color: color-mix(in srgb, var(--light-orange-bg-color), transparent 50%);
   border-radius: 50px;
 }
 
